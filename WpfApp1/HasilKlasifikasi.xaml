@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="HasilKlasifikasi" Height="450" Width="800">
+        Title="Hasil Klasifikasi" Height="450" Width="800">
     <Grid>
         <DataGrid Name="datagridList"  Margin="0 8 0 0"  CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="False"
                       materialDesign:DataGridAssist.CellPadding="13 8 8 8" materialDesign:DataGridAssist.ColumnHeaderPadding="8" SelectionChanged="DataGrid_SelectionChanged">
@@ -17,15 +17,16 @@
             </DataGrid.ItemContainerStyle>
             <DataGrid.Columns>
 
-                <DataGridTextColumn Binding="{Binding Nama}" Width="3*" IsReadOnly="True"
+                <DataGridTextColumn Binding="{Binding IDPerjalanan}" Width="3*" IsReadOnly="True"
                                         Header="ID Perjalanan"
                                          />
-                <DataGridTextColumn Binding="{Binding Summary}" Width="3*" IsReadOnly="True"
+                
+                <DataGridTextColumn Binding="{Binding Prediksi}" Width="3*" IsReadOnly="True"
                                         Header="Prediksi"
                                          />
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Kembali" HorizontalAlignment="Right" Margin="0,0,668,12" VerticalAlignment="Bottom" Width="67" Click="Button_Click_1" Height="36"/>
+        
 
     </Grid>
 </Window>

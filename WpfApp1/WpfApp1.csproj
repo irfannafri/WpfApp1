@@ -93,6 +93,7 @@
     <Compile Include="HasilKlasifikasi.xaml.cs">
       <DependentUpon>HasilKlasifikasi.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IndividualModel.cs" />
     <Compile Include="InputData.xaml.cs">
       <DependentUpon>InputData.xaml</DependentUpon>
     </Compile>
@@ -133,6 +134,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="danger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="danger2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="safe2.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.5.0-ci125\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.5.0-ci125\build\MaterialDesignThemes.targets')" />

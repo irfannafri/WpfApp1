@@ -8,28 +8,31 @@
         mc:Ignorable="d"
         Title="DetailKlasifikasi" Height="450" Width="800">
     <Grid>
-        <Label Content="ID" HorizontalAlignment="Left" Margin="52,48,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="-1.13,0.853"/>
-        <materialDesign:Card Margin="58,0,0,77" Width="200" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="251">
-            <Grid>
-                <StackPanel Grid.Row="1" Margin="8 24 8 0" >
-                    <TextBlock FontSize="16" FontWeight="Bold">Accelometer</TextBlock>
-                </StackPanel>
-                <StackPanel HorizontalAlignment="Right" Grid.Row="2" Orientation="Horizontal" Margin="8">
-                    <Label Name="ValenceLabel" Content="Active" FontWeight="Bold"/>
-                </StackPanel>
-            </Grid>
-            
-        </materialDesign:Card>
-        <materialDesign:Card Margin="481,0,0,122" Width="200" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="227">
-            <Grid>
-                <Label Content="Keadaan Perjalanan" FontWeight="Bold" FontSize="16"/>
-                <ListBox Name="listPossible" Margin="0,34,0,0">
-                    <Image Name="imgSafe" Visibility="Collapsed" Source="/safe.png" Height="140" Width="196" Stretch="Uniform" Margin="0,34,0,0"/>
-                    <Image Name="imgDanger" Visibility="Visible" Source="/danger.png" Height="140" Width="196" Stretch="Uniform" Margin="0,34,0,0"/>
+        <Label Content="Detail" HorizontalAlignment="Left" Margin="52,48,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="-1.13,0.853"/>
+        <materialDesign:Card Margin="98,0,0,69" Width="234" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="287">
+            <Grid Margin="0,-12,0,12">
+                <ListBox Name="listDetail" Margin="1,34,-1,-1">
                 </ListBox>
+
+            </Grid>
+
+        </materialDesign:Card>
+        <materialDesign:Card Margin="424,0,0,53" Width="257" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="296">
+            <Grid Margin="0,-12,0,12">
+                <Label HorizontalAlignment="Center" Content="Keadaan Perjalanan" FontWeight="Bold" FontSize="16"/>
+                <Image Name="imgSafe" Visibility="Collapsed" Source="/safe2.PNG" Stretch="Uniform" Margin="-12,44,-26,42"/>
+                <Image Name="imgDanger" Visibility="Collapsed" Source="/danger2.PNG" Stretch="Uniform" Margin="-32,41,-25,24" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.359"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
             </Grid>
         </materialDesign:Card>
-        <Button Content="Kembali" HorizontalAlignment="Right" Margin="0,0,668,12" VerticalAlignment="Bottom" Width="67" Click="Button_Click_1" Height="36"/>
 
     </Grid>
 </Window>

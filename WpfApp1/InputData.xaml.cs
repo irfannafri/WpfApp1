@@ -44,10 +44,21 @@ namespace WpfApp1
             {
                 
                 var data = new JavaScriptSerializer().Deserialize<double[]>(e.Data);
-                var individualModel = new IndividualModel()
+                IndividualModel individualModel = new IndividualModel()
+
                 {
                     IDPerjalanan = "ID " + listPrediksi.Count,
-                    Prediksi = Convert.ToInt32(data[12])
+                    Prediksi = Convert.ToInt32(data[0]),
+                    Accuracy = data[1],
+                    Bearing = data[2],
+                    Acx = data[3],
+                    Acy = data[4],
+                    Acz = data[5],
+                    Gyrox = data[6],
+                    Gyroy = data[7],
+                    Gyroz = data[8],
+                    Second = data[9],
+                    Speed = data[10],
                 };
                 listPrediksi.Add(individualModel);
             }

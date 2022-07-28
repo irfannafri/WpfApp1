@@ -21,7 +21,7 @@ namespace WpfApp1
     {
         List<IndividualModel> data;
         //List<String> data;
-        public HasilKlasifikasi(List<String> data)
+        public HasilKlasifikasi(List<IndividualModel> data)
         {
             InitializeComponent();
             
